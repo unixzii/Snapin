@@ -11,7 +11,40 @@
 		FA4696C01E40360800564177 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4696BF1E40360800564177 /* main.m */; };
 		FA4696C21E40360800564177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4696C11E40360800564177 /* Assets.xcassets */; };
 		FA4696C51E40360800564177 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4696C31E40360800564177 /* MainMenu.xib */; };
+		FA4696CD1E403EA600564177 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA4696CC1E403EA600564177 /* Credits.rtf */; };
+		FA4696D31E40421900564177 /* DDHotKeyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4696D21E40421900564177 /* DDHotKeyTextField.m */; };
+		FA4696D61E4042AE00564177 /* DDHotKeyUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4696D51E4042AE00564177 /* DDHotKeyUtilities.m */; };
+		FA4696D91E4042BA00564177 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4696D81E4042BA00564177 /* DDHotKeyCenter.m */; };
+		FA4696DF1E40460500564177 /* SPNHotkeyField.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4696DE1E40460500564177 /* SPNHotkeyField.m */; };
+		FA4696E41E40512700564177 /* SPNPreferenceWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4696E31E40512700564177 /* SPNPreferenceWindowController.m */; };
+		FA4696E61E40518200564177 /* SPNPreferenceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4696E51E40518200564177 /* SPNPreferenceWindowController.xib */; };
+		FA4696EA1E40607100564177 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4696E91E40607100564177 /* ServiceManagement.framework */; };
+		FA4696F31E40615900564177 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4696F21E40615900564177 /* AppDelegate.m */; };
+		FA4696F61E40615900564177 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4696F51E40615900564177 /* main.m */; };
+		FA4696F81E40615900564177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4696F71E40615900564177 /* Assets.xcassets */; };
+		FA4696FB1E40615900564177 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4696F91E40615900564177 /* MainMenu.xib */; };
+		FA4697011E4061AB00564177 /* LoginHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA4696EF1E40615900564177 /* LoginHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA4697051E40927B00564177 /* SPNSnapshotWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4697031E40927B00564177 /* SPNSnapshotWindowController.m */; };
+		FA4697061E40927B00564177 /* SPNSnapshotWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4697041E40927B00564177 /* SPNSnapshotWindowController.xib */; };
+		FA46970B1E40975800564177 /* SPNCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA46970A1E40975800564177 /* SPNCropView.m */; };
+		FA8370CE1E41A7AA00CA2BB6 /* SPNImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8370CD1E41A7AA00CA2BB6 /* SPNImageView.m */; };
+		FA8370D11E41AA1E00CA2BB6 /* SPNCenteredClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8370D01E41AA1E00CA2BB6 /* SPNCenteredClipView.m */; };
+		FAEDCCA91E418FF0003826BA /* SPNImageViewerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEDCCA71E418FF0003826BA /* SPNImageViewerWindowController.m */; };
+		FAEDCCAA1E418FF0003826BA /* SPNImageViewerWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAEDCCA81E418FF0003826BA /* SPNImageViewerWindowController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA4697001E40618F00564177 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				FA4697011E4061AB00564177 /* LoginHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA4696B81E40360800564177 /* Snapin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +54,52 @@
 		FA4696C11E40360800564177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA4696C41E40360800564177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FA4696C61E40360800564177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4696CC1E403EA600564177 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		FA4696CE1E403EB800564177 /* Snapin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Snapin.entitlements; sourceTree = "<group>"; };
+		FA4696D11E40421900564177 /* DDHotKeyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyTextField.h; sourceTree = "<group>"; };
+		FA4696D21E40421900564177 /* DDHotKeyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyTextField.m; sourceTree = "<group>"; };
+		FA4696D41E4042AE00564177 /* DDHotKeyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyUtilities.h; sourceTree = "<group>"; };
+		FA4696D51E4042AE00564177 /* DDHotKeyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyUtilities.m; sourceTree = "<group>"; };
+		FA4696D71E4042BA00564177 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		FA4696D81E4042BA00564177 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		FA4696DD1E40460500564177 /* SPNHotkeyField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNHotkeyField.h; sourceTree = "<group>"; };
+		FA4696DE1E40460500564177 /* SPNHotkeyField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNHotkeyField.m; sourceTree = "<group>"; };
+		FA4696E21E40512700564177 /* SPNPreferenceWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNPreferenceWindowController.h; sourceTree = "<group>"; };
+		FA4696E31E40512700564177 /* SPNPreferenceWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNPreferenceWindowController.m; sourceTree = "<group>"; };
+		FA4696E51E40518200564177 /* SPNPreferenceWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPNPreferenceWindowController.xib; sourceTree = "<group>"; };
+		FA4696E71E405B9000564177 /* SPNConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPNConfig.h; sourceTree = "<group>"; };
+		FA4696E91E40607100564177 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		FA4696EF1E40615900564177 /* LoginHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4696F11E40615900564177 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA4696F21E40615900564177 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA4696F51E40615900564177 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA4696F71E40615900564177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA4696FA1E40615900564177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA4696FC1E40615900564177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4697021E40927B00564177 /* SPNSnapshotWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNSnapshotWindowController.h; sourceTree = "<group>"; };
+		FA4697031E40927B00564177 /* SPNSnapshotWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNSnapshotWindowController.m; sourceTree = "<group>"; };
+		FA4697041E40927B00564177 /* SPNSnapshotWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPNSnapshotWindowController.xib; sourceTree = "<group>"; };
+		FA4697091E40975800564177 /* SPNCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNCropView.h; sourceTree = "<group>"; };
+		FA46970A1E40975800564177 /* SPNCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNCropView.m; sourceTree = "<group>"; };
+		FA8370CC1E41A7AA00CA2BB6 /* SPNImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNImageView.h; sourceTree = "<group>"; };
+		FA8370CD1E41A7AA00CA2BB6 /* SPNImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNImageView.m; sourceTree = "<group>"; };
+		FA8370CF1E41AA1E00CA2BB6 /* SPNCenteredClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNCenteredClipView.h; sourceTree = "<group>"; };
+		FA8370D01E41AA1E00CA2BB6 /* SPNCenteredClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNCenteredClipView.m; sourceTree = "<group>"; };
+		FAEDCCA61E418FF0003826BA /* SPNImageViewerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNImageViewerWindowController.h; sourceTree = "<group>"; };
+		FAEDCCA71E418FF0003826BA /* SPNImageViewerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNImageViewerWindowController.m; sourceTree = "<group>"; };
+		FAEDCCA81E418FF0003826BA /* SPNImageViewerWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPNImageViewerWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FA4696B51E40360700564177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4696EA1E40607100564177 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4696EC1E40615900564177 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				FA4696BA1E40360800564177 /* Snapin */,
+				FA4696F01E40615900564177 /* LoginHelper */,
 				FA4696B91E40360800564177 /* Products */,
+				FA4696E81E40607100564177 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				FA4696B81E40360800564177 /* Snapin.app */,
+				FA4696EF1E40615900564177 /* LoginHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,11 +131,10 @@
 		FA4696BA1E40360800564177 /* Snapin */ = {
 			isa = PBXGroup;
 			children = (
-				FA4696BB1E40360800564177 /* AppDelegate.h */,
-				FA4696BC1E40360800564177 /* AppDelegate.m */,
-				FA4696C11E40360800564177 /* Assets.xcassets */,
-				FA4696C31E40360800564177 /* MainMenu.xib */,
-				FA4696C61E40360800564177 /* Info.plist */,
+				FA4696CE1E403EB800564177 /* Snapin.entitlements */,
+				FA4696E01E4050E400564177 /* Views */,
+				FA4696E11E4050EF00564177 /* Window Controllers */,
+				FA4696CF1E4041E100564177 /* Third Party */,
 				FA4696BE1E40360800564177 /* Supporting Files */,
 			);
 			path = Snapin;
@@ -66,9 +143,121 @@
 		FA4696BE1E40360800564177 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA4696E71E405B9000564177 /* SPNConfig.h */,
+				FA4696BB1E40360800564177 /* AppDelegate.h */,
+				FA4696BC1E40360800564177 /* AppDelegate.m */,
+				FA4696C11E40360800564177 /* Assets.xcassets */,
+				FA4696C31E40360800564177 /* MainMenu.xib */,
+				FA4696CC1E403EA600564177 /* Credits.rtf */,
+				FA4696C61E40360800564177 /* Info.plist */,
 				FA4696BF1E40360800564177 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA4696CF1E4041E100564177 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				FA4696D01E4041EE00564177 /* DDHotKey */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		FA4696D01E4041EE00564177 /* DDHotKey */ = {
+			isa = PBXGroup;
+			children = (
+				FA4696D71E4042BA00564177 /* DDHotKeyCenter.h */,
+				FA4696D81E4042BA00564177 /* DDHotKeyCenter.m */,
+				FA4696D41E4042AE00564177 /* DDHotKeyUtilities.h */,
+				FA4696D51E4042AE00564177 /* DDHotKeyUtilities.m */,
+				FA4696D11E40421900564177 /* DDHotKeyTextField.h */,
+				FA4696D21E40421900564177 /* DDHotKeyTextField.m */,
+			);
+			name = DDHotKey;
+			sourceTree = "<group>";
+		};
+		FA4696E01E4050E400564177 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA4696DD1E40460500564177 /* SPNHotkeyField.h */,
+				FA4696DE1E40460500564177 /* SPNHotkeyField.m */,
+				FA4697091E40975800564177 /* SPNCropView.h */,
+				FA46970A1E40975800564177 /* SPNCropView.m */,
+				FA8370CC1E41A7AA00CA2BB6 /* SPNImageView.h */,
+				FA8370CD1E41A7AA00CA2BB6 /* SPNImageView.m */,
+				FA8370CF1E41AA1E00CA2BB6 /* SPNCenteredClipView.h */,
+				FA8370D01E41AA1E00CA2BB6 /* SPNCenteredClipView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FA4696E11E4050EF00564177 /* Window Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA4697071E40928900564177 /* Preference */,
+				FA4697081E4092A600564177 /* Snapshot */,
+				FAEDCCA51E418FD4003826BA /* Image Viewer */,
+			);
+			name = "Window Controllers";
+			sourceTree = "<group>";
+		};
+		FA4696E81E40607100564177 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA4696E91E40607100564177 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA4696F01E40615900564177 /* LoginHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FA4696F11E40615900564177 /* AppDelegate.h */,
+				FA4696F21E40615900564177 /* AppDelegate.m */,
+				FA4696F71E40615900564177 /* Assets.xcassets */,
+				FA4696F91E40615900564177 /* MainMenu.xib */,
+				FA4696FC1E40615900564177 /* Info.plist */,
+				FA4696F41E40615900564177 /* Supporting Files */,
+			);
+			path = LoginHelper;
+			sourceTree = "<group>";
+		};
+		FA4696F41E40615900564177 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA4696F51E40615900564177 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA4697071E40928900564177 /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				FA4696E21E40512700564177 /* SPNPreferenceWindowController.h */,
+				FA4696E31E40512700564177 /* SPNPreferenceWindowController.m */,
+				FA4696E51E40518200564177 /* SPNPreferenceWindowController.xib */,
+			);
+			name = Preference;
+			sourceTree = "<group>";
+		};
+		FA4697081E4092A600564177 /* Snapshot */ = {
+			isa = PBXGroup;
+			children = (
+				FA4697021E40927B00564177 /* SPNSnapshotWindowController.h */,
+				FA4697031E40927B00564177 /* SPNSnapshotWindowController.m */,
+				FA4697041E40927B00564177 /* SPNSnapshotWindowController.xib */,
+			);
+			name = Snapshot;
+			sourceTree = "<group>";
+		};
+		FAEDCCA51E418FD4003826BA /* Image Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				FAEDCCA61E418FF0003826BA /* SPNImageViewerWindowController.h */,
+				FAEDCCA71E418FF0003826BA /* SPNImageViewerWindowController.m */,
+				FAEDCCA81E418FF0003826BA /* SPNImageViewerWindowController.xib */,
+			);
+			name = "Image Viewer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +270,7 @@
 				FA4696B41E40360700564177 /* Sources */,
 				FA4696B51E40360700564177 /* Frameworks */,
 				FA4696B61E40360700564177 /* Resources */,
+				FA4697001E40618F00564177 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -89,6 +279,23 @@
 			name = Snapin;
 			productName = Snapin;
 			productReference = FA4696B81E40360800564177 /* Snapin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA4696EE1E40615900564177 /* LoginHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4696FD1E40615900564177 /* Build configuration list for PBXNativeTarget "LoginHelper" */;
+			buildPhases = (
+				FA4696EB1E40615900564177 /* Sources */,
+				FA4696EC1E40615900564177 /* Frameworks */,
+				FA4696ED1E40615900564177 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginHelper;
+			productName = LoginHelper;
+			productReference = FA4696EF1E40615900564177 /* LoginHelper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,6 +308,16 @@
 				ORGANIZATIONNAME = "杨弘宇";
 				TargetAttributes = {
 					FA4696B71E40360700564177 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 9ZS3K56XF5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					FA4696EE1E40615900564177 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 9ZS3K56XF5;
 						ProvisioningStyle = Automatic;
@@ -121,6 +338,7 @@
 			projectRoot = "";
 			targets = (
 				FA4696B71E40360700564177 /* Snapin */,
+				FA4696EE1E40615900564177 /* LoginHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -130,8 +348,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4696E61E40518200564177 /* SPNPreferenceWindowController.xib in Resources */,
+				FA4697061E40927B00564177 /* SPNSnapshotWindowController.xib in Resources */,
 				FA4696C21E40360800564177 /* Assets.xcassets in Resources */,
+				FA4696CD1E403EA600564177 /* Credits.rtf in Resources */,
 				FA4696C51E40360800564177 /* MainMenu.xib in Resources */,
+				FAEDCCAA1E418FF0003826BA /* SPNImageViewerWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4696ED1E40615900564177 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4696F81E40615900564177 /* Assets.xcassets in Resources */,
+				FA4696FB1E40615900564177 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +373,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4696D91E4042BA00564177 /* DDHotKeyCenter.m in Sources */,
+				FA4696D31E40421900564177 /* DDHotKeyTextField.m in Sources */,
+				FA4696E41E40512700564177 /* SPNPreferenceWindowController.m in Sources */,
+				FA4696DF1E40460500564177 /* SPNHotkeyField.m in Sources */,
 				FA4696C01E40360800564177 /* main.m in Sources */,
+				FA46970B1E40975800564177 /* SPNCropView.m in Sources */,
+				FAEDCCA91E418FF0003826BA /* SPNImageViewerWindowController.m in Sources */,
+				FA4697051E40927B00564177 /* SPNSnapshotWindowController.m in Sources */,
+				FA8370CE1E41A7AA00CA2BB6 /* SPNImageView.m in Sources */,
+				FA4696D61E4042AE00564177 /* DDHotKeyUtilities.m in Sources */,
+				FA8370D11E41AA1E00CA2BB6 /* SPNCenteredClipView.m in Sources */,
 				FA4696BD1E40360800564177 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4696EB1E40615900564177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4696F61E40615900564177 /* main.m in Sources */,
+				FA4696F31E40615900564177 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +404,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				FA4696C41E40360800564177 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		FA4696F91E40615900564177 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA4696FA1E40615900564177 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -252,11 +510,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Snapin/Snapin.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9ZS3K56XF5;
 				INFOPLIST_FILE = Snapin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyandev.macapp.snapin.Snapin;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyandev.macapp.snapin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -265,12 +526,45 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Snapin/Snapin.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9ZS3K56XF5;
 				INFOPLIST_FILE = Snapin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyandev.macapp.snapin.Snapin;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyandev.macapp.snapin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FA4696FE1E40615900564177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9ZS3K56XF5;
+				INFOPLIST_FILE = LoginHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyandev.macapp.snapin.LoginHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FA4696FF1E40615900564177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9ZS3K56XF5;
+				INFOPLIST_FILE = LoginHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyandev.macapp.snapin.LoginHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -293,6 +587,16 @@
 				FA4696CB1E40360800564177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA4696FD1E40615900564177 /* Build configuration list for PBXNativeTarget "LoginHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4696FE1E40615900564177 /* Debug */,
+				FA4696FF1E40615900564177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>LoginHelper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Snapin.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>FA4696B71E40360700564177</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA4696EE1E40615900564177</key>
 		<dict>
 			<key>primary</key>
 			<true/>

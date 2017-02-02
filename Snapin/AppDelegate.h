@@ -8,8 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
+#define NSAppDelegate ((AppDelegate *) [NSApp delegate])
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+- (void)addActiveViewerWindowController:(NSWindowController *)wc;
+- (void)removeActiveViewerWindowController:(NSWindowController *)wc;
+
+- (void)setupGlobalKeyEquivalent;
 
 @end
-
