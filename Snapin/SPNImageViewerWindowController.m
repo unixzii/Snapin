@@ -60,6 +60,10 @@
     [self setStandardButtonsVisibility:NO];
 }
 
+- (void)windowWillStartLiveResize:(NSNotification *)notification {
+    self.window.aspectRatio = self.window.frame.size;
+}
+
 - (void)windowDidResize:(NSNotification *)notification {
     if (_trackingArea) {
         [self.window.contentView removeTrackingArea:_trackingArea];

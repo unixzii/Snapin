@@ -27,6 +27,7 @@
 		FA4697051E40927B00564177 /* SPNSnapshotWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4697031E40927B00564177 /* SPNSnapshotWindowController.m */; };
 		FA4697061E40927B00564177 /* SPNSnapshotWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4697041E40927B00564177 /* SPNSnapshotWindowController.xib */; };
 		FA46970B1E40975800564177 /* SPNCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA46970A1E40975800564177 /* SPNCropView.m */; };
+		FA6491EC1E486D8B001BC868 /* SPNAutoScaleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6491EB1E486D8B001BC868 /* SPNAutoScaleScrollView.m */; };
 		FA8370CE1E41A7AA00CA2BB6 /* SPNImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8370CD1E41A7AA00CA2BB6 /* SPNImageView.m */; };
 		FA8370D11E41AA1E00CA2BB6 /* SPNCenteredClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8370D01E41AA1E00CA2BB6 /* SPNCenteredClipView.m */; };
 		FAEDCCA91E418FF0003826BA /* SPNImageViewerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEDCCA71E418FF0003826BA /* SPNImageViewerWindowController.m */; };
@@ -81,6 +82,9 @@
 		FA4697041E40927B00564177 /* SPNSnapshotWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPNSnapshotWindowController.xib; sourceTree = "<group>"; };
 		FA4697091E40975800564177 /* SPNCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNCropView.h; sourceTree = "<group>"; };
 		FA46970A1E40975800564177 /* SPNCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNCropView.m; sourceTree = "<group>"; };
+		FA6491EA1E486D8B001BC868 /* SPNAutoScaleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNAutoScaleScrollView.h; sourceTree = "<group>"; };
+		FA6491EB1E486D8B001BC868 /* SPNAutoScaleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNAutoScaleScrollView.m; sourceTree = "<group>"; };
+		FA6491ED1E4876BC001BC868 /* LoginHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginHelper.entitlements; sourceTree = "<group>"; };
 		FA8370CC1E41A7AA00CA2BB6 /* SPNImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNImageView.h; sourceTree = "<group>"; };
 		FA8370CD1E41A7AA00CA2BB6 /* SPNImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNImageView.m; sourceTree = "<group>"; };
 		FA8370CF1E41AA1E00CA2BB6 /* SPNCenteredClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNCenteredClipView.h; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 				FA8370CD1E41A7AA00CA2BB6 /* SPNImageView.m */,
 				FA8370CF1E41AA1E00CA2BB6 /* SPNCenteredClipView.h */,
 				FA8370D01E41AA1E00CA2BB6 /* SPNCenteredClipView.m */,
+				FA6491EA1E486D8B001BC868 /* SPNAutoScaleScrollView.h */,
+				FA6491EB1E486D8B001BC868 /* SPNAutoScaleScrollView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 		FA4696F01E40615900564177 /* LoginHelper */ = {
 			isa = PBXGroup;
 			children = (
+				FA6491ED1E4876BC001BC868 /* LoginHelper.entitlements */,
 				FA4696F11E40615900564177 /* AppDelegate.h */,
 				FA4696F21E40615900564177 /* AppDelegate.m */,
 				FA4696F71E40615900564177 /* Assets.xcassets */,
@@ -321,6 +328,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 9ZS3K56XF5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -385,6 +397,7 @@
 				FA4696D61E4042AE00564177 /* DDHotKeyUtilities.m in Sources */,
 				FA8370D11E41AA1E00CA2BB6 /* SPNCenteredClipView.m in Sources */,
 				FA4696BD1E40360800564177 /* AppDelegate.m in Sources */,
+				FA6491EC1E486D8B001BC868 /* SPNAutoScaleScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +529,7 @@
 				DEVELOPMENT_TEAM = 9ZS3K56XF5;
 				INFOPLIST_FILE = Snapin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyandev.macapp.snapin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -532,7 +545,7 @@
 				DEVELOPMENT_TEAM = 9ZS3K56XF5;
 				INFOPLIST_FILE = Snapin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyandev.macapp.snapin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -542,11 +555,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoginHelper/LoginHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9ZS3K56XF5;
 				INFOPLIST_FILE = LoginHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyandev.macapp.snapin.LoginHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -557,11 +572,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoginHelper/LoginHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9ZS3K56XF5;
 				INFOPLIST_FILE = LoginHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyandev.macapp.snapin.LoginHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
